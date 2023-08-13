@@ -2,7 +2,9 @@
 session_start();
 if (empty($_SESSION['login'])) {
     header('Location: login.php');
-  
+    header('Location: catatan.php');
+    header('Location: index.php');
+    header('Location: formulir_tambah_data.php');
     exit();
 }
 session_destroy()?>
